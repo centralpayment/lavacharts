@@ -63,6 +63,7 @@ class Legend extends JsonConfig
      * 'bottom' - Below the chart.
      * 'in'     - Inside the chart, by the top left corner.
      * 'none'   - No legend is displayed.
+     * 'labeled'- Draw lines to pie slices. Only available in Pie Charts
      *
      * @param  string $position Location of legend.
      * @return \Khill\Lavacharts\Configs\Legend
@@ -75,7 +76,8 @@ class Legend extends JsonConfig
             'top',
             'bottom',
             'in',
-            'none'
+            'none',
+            'labeled'
         ];
 
         return $this->setStringInArrayOption(__FUNCTION__, $position, $values);
